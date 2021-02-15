@@ -4,7 +4,7 @@ import Category from './Category'
 import Posts from './Posts'
 import Post from './Post'
 
-const Forum= ()=>{
+const Forum= () =>{
     return(
         <>
             <div>

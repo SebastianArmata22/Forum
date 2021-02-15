@@ -1,7 +1,7 @@
 import React from 'react'
 import {auth, providerFacebook, providerGithub, providerGoogle} from '../firebase/auth'
 
-const SignIn= () =>{
+const SignIn= ()=>{
     const signInWithGoogle=()=>{
         auth.signInWithPopup(providerGoogle)
     }

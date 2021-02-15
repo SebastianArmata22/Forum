@@ -5,7 +5,8 @@ import Forum from './components/Forum'
 import SignIn from './components/SignIn'
 
 function App() {
-  const [user]= useAuthState(auth)
+  const user= useAuthState(auth)
+  console.log(user)
   return (
     <div className="app">
       {user ? <Forum />: <SignIn />}
