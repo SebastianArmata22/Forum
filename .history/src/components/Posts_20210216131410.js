@@ -12,7 +12,7 @@ const Posts= ({category,parentCallback}) =>{
     return(
         <div>
             <CreatePost category={category}/>
-            {posts && posts.map(post=> <ShortPost key={post.id} post={post} parentCallback={parentCallback}/>) }
+            {posts && posts.map(post=> <ShortPost post={post} parentCallback={parentCallback}/>) }
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Category =({category, parentCallback})=>{
-    const setCategory=()=>parentCallback(category.id)
+const Category =({category, parentCallbackCategory})=>{
+    const setCategory=()=>parentCallbackCategory(category.id)
     return(
         <button onClick={setCategory}>{category.name}</button>
     )
