@@ -1,4 +1,3 @@
-import '../styles/forum.scss'
 import React, { useState } from 'react'
 import Profile from './Profile'
 import Categories from './Categories'

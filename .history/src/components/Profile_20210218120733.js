@@ -6,10 +6,11 @@ import LogOut from './LogOut'
 const Profile= () =>{
     const profile=auth.currentUser
     return(
-        <div className='profile-container'>
-            <div className='user-container'>
+        <div>
+            <div className='profile-container'>
                 <img src={profile.photoURL} alt='profile'></img>
                 <p>{profile.displayName}</p>
+                <p>{profile.email}</p>
             </div>
             <LogOut />
         </div>

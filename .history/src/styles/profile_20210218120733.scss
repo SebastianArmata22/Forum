@@ -1,0 +1,4 @@
+@import './variables.scss';
+.profile-container{
+@include flex-container;
+}

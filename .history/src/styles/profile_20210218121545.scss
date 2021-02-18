@@ -1,0 +1,11 @@
+@import './variables.scss';
+.profile-container{
+    @include flex-container;
+    img{
+        height: 3rem;
+        margin: 1rem 0.5rem 1rem 0;
+    }
+    p{
+        color: $main-text-color;
+    }
+}

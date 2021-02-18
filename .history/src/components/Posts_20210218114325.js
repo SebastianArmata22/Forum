@@ -9,6 +9,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 const Posts= ({category,parentCallback}) =>{
     const queryToBase = postsCollection.where("category","==",category)
     const [posts] = useCollectionData (queryToBase, {idField: 'id'});
+    console.log(posts)
     return(
         <div className='posts-container'>
             <CreatePost category={category}/>

@@ -7,7 +7,7 @@ const LogOut= ()=>{
         auth.currentUser && auth.signOut()
     }
     return(
-        <input type="image" src={powerOff} onClick={logout} />
+        <input type="image" src={powerOff} />
     )
 }
 export default LogOut

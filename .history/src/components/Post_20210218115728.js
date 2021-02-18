@@ -1,4 +1,3 @@
-import '../styles/post.scss'
 import React from 'react'
 
 const Post= ({post})=>{
