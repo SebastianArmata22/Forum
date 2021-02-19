@@ -1,0 +1,29 @@
+@import './variables.scss';
+.comment-container{
+
+}
+.profile{
+    @include flex-container;
+    justify-content: left;
+    margin: 2rem 0 2rem 0;
+    color: $first-main-color;
+    img{
+        height: 3rem;
+        margin-right: 1rem;
+    }
+    span{
+        color: $first-main-color;
+    }
+}
+.reactions-comment{
+    display: flex;
+    p{
+        margin: 1rem;
+        @include flex-container;
+        cursor: pointer;
+        img{
+            height: 20px;
+            margin-right: 0.5rem;
+        }
+    }
+}

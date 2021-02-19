@@ -1,0 +1,11 @@
+@import './variables.scss';
+.post{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    padding: 2rem;
+    h2{
+        color: $second-main-color;
+        font-size: 2.5rem;
+    }
+
+}

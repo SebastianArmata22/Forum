@@ -1,0 +1,26 @@
+@import './variables.scss';
+.post{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    padding: 3rem;
+    h2{
+        color: $second-main-color;
+        font-size: 2.5rem;
+    }
+     div{
+        
+    }
+
+}
+.post-user-container{
+    @include flex-container;
+    justify-content: start;
+    margin: 2rem 0 2rem 0;
+    img{
+        height: 3rem;
+        margin-right: 1rem;
+    }
+    span{
+        color: $second-main-color;
+    }
+}

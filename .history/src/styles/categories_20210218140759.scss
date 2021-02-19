@@ -1,0 +1,21 @@
+@import './variables.scss';
+.categories-container{
+    padding: 3rem 0 0 0;
+    margin: 1rem;
+    max-height: calc(100% - 10rem);
+    overflow-y: auto;
+    button{
+        background-color: transparent;
+        border: none;
+        height: 4rem;
+        width: 100%;
+        color: $main-text-color;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255,0.4);
+        cursor: pointer;
+        text-align: left;
+    }
+    :hover{
+        border-bottom: 1px solid rgba(255, 255, 255,0.8);
+    }
+}

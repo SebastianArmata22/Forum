@@ -1,0 +1,16 @@
+@import './variables.scss';
+.posts-container{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    background-color: $second-main-color;
+    padding: 1rem;
+    color: $main-text-color;
+}
+.posts-general{
+    @include flex-container;
+    justify-content: space-between;
+    div input{
+        margin-right: 1rem;
+
+    }
+}

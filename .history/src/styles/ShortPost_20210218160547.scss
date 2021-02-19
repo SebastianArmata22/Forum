@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.short-post-container{
+    margin: 1rem;
+    height: 5rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+    cursor: pointer;
+    p{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 90%;
+    }
+}

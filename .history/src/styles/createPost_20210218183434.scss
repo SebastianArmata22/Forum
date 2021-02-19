@@ -1,0 +1,11 @@
+@import './variables.scss';
+.create-post-container{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    padding: 3rem;
+    color: $second-main-color;
+}
+.heading-input{
+    height: 3rem;
+    width: 60%;
+}

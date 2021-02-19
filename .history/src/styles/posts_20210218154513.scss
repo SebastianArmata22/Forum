@@ -1,0 +1,22 @@
+@import './variables.scss';
+.posts-container{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    background-color: $second-main-color;
+    color: $main-text-color;
+}
+.posts-general{
+    @include flex-container;
+    justify-content: space-between;
+    @include shadow-container;
+    height: 5rem;
+    padding: 1rem;
+    div input{
+        margin-right: 1rem;
+
+    }
+    div button{
+        height: 3rem;
+        background-color: $first-main-color;
+    }
+}

@@ -1,0 +1,7 @@
+@import './variables.scss';
+.posts-container{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    background-color: $second-main-color;
+    padding: 1rem;
+}
