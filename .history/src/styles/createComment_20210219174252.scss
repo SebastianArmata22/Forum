@@ -1,0 +1,15 @@
+@import './variables.scss';
+.create-comment-container{
+    form {
+        textarea{
+            border: 1px solid $second-main-color;
+            width: 70%;
+        }
+        input[type="submit"]{
+            width: 20%;
+            height: 2rem;
+        }
+
+    }
+
+}

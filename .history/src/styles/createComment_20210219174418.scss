@@ -1,0 +1,21 @@
+@import './variables.scss';
+.create-comment-container{
+    form {
+        @include flex-container;
+        margin-top: 1rem;
+        textarea{
+            border: 1px solid $second-main-color;
+            width: 70%;
+        }
+        input[type="submit"]{
+            width: 5rem;
+            height: 2rem;
+            margin-left: 1rem;
+            background-color: $first-main-color;
+            color: $main-text-color;
+            border: none;
+        }
+
+    }
+
+}
