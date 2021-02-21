@@ -1,0 +1,50 @@
+@import './variables.scss';
+.signin-container{
+height: 100vh;
+position: relative;
+background: url('../background1.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+@include flex-container;
+&::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url('../background1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+    content: "";
+    z-index: -1;
+}
+> div{
+    width: 60rem;
+    height: 70vh;
+    background-color: #ffffff;
+    display: flex;
+    -webkit-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    margin: 0.5rem;
+}
+}
+.welcome-container{
+    width: 50%;
+    height: 100%;
+    background-image: url('../background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h1{
+        color: $main-text-color;
+        text-align: center;
+    }
+}
+.buttons-container{
+    width: 50%;
+    height: 100%;
+}

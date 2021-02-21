@@ -1,0 +1,33 @@
+@import './variables.scss';
+.signin-container{
+height: 100vh;
+position: relative;
+background: url('../background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+@include flex-container;
+> div{
+    width: 60rem;
+    height: 70vh;
+    display: flex;
+    -webkit-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    margin: 0.5rem;
+}
+}
+.welcome-container{
+    width: 40%;
+    height: 100%;
+    background-color: rgba($first-main-color, $alpha: .4);
+    h1{
+        color: $main-text-color;
+        text-align: center;
+    }
+}
+.buttons-container{
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+}

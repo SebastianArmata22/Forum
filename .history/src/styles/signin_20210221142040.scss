@@ -1,0 +1,95 @@
+@import './variables.scss';
+.signin-container{
+height: 100vh;
+position: relative;
+background: url('../background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+@include flex-container;
+> div{
+    width: 60rem;
+    height: 70vh;
+    display: flex;
+    -webkit-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
+    margin: 0.5rem;
+}
+}
+.welcome-container{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(77, 182, 177,0.4);
+    h1{
+        color: $main-text-color;
+        text-align: center;
+    }
+}
+.sign-in-register{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+   .sign-in-email{
+        @include flex-container;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $first-main-color;
+        h2{
+            color: $second-main-color;
+        }
+        form{
+            @include flex-container;
+            flex-direction: column;
+            input[type="email"], input[type="password"]{
+                width: 20rem;
+                height: 2rem;
+                margin: 1rem;
+                padding: 0.2rem;
+                border: none;
+                border-bottom: 1px solid $second-main-color;
+                color: $second-main-color;
+                outline: none;
+            }
+            input[type="submit"]{
+                width: 7rem;
+                height: 2rem;
+                background-color: $second-main-color;
+                border: none;
+                cursor: pointer;
+                color: $main-text-color;
+            }
+        }
+    }
+}
+.register-info{
+    margin: 1rem;
+    color: $second-main-color;
+    width: 100%;
+    @include flex-container;
+    flex-direction: column;
+    span{
+        color: $first-main-color;
+    }
+}
+.additional-logging{
+    display: flex;
+    align-items: center;
+    color: $second-main-color;
+    height: 10rem;
+    img{
+        height: 32px;
+        margin: 0.5rem;
+        cursor: pointer;
+        &:hover{
+        transform: rotate(1080deg);
+        transition: 2s;
+        }
+    }
+}

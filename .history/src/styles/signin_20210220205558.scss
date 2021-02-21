@@ -1,0 +1,12 @@
+@import './variables.scss';
+.signin-container{
+width: 100%;
+height: 100vh;
+
+@include flex-container;
+div{
+    width: 50rem;
+    height: 80vh;
+    background-color: rgba($first-main-color, $alpha: 1);
+}
+}
