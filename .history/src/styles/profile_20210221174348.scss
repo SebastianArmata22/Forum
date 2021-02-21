@@ -4,6 +4,7 @@
     @include flex-container;
     flex-direction: column;
     @include shadow-container;
+
     input{
         padding-bottom: 0.5rem;
     }
