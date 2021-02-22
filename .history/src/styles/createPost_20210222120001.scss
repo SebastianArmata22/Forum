@@ -1,0 +1,61 @@
+@import './variables.scss';
+.create-post-container{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    padding: 3rem;
+    color: $second-main-color;
+    h1{
+        margin-bottom: 2rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="text"], textarea{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $first-main-color;
+        margin-top: 1rem;
+        color: $second-main-color;
+        padding: 0.5rem;
+
+    }
+    input[type="submit"]{
+        margin-top: 2rem;
+        height: 2rem;
+        width: 7rem;
+        background-color: $first-main-color;
+        border: none;
+        color: $main-text-color;
+        cursor: pointer;
+
+    }
+    select{
+        width: 100%;
+        height: 2rem;
+        border: 1px solid $first-main-color;
+        color: $second-main-color;
+        cursor: pointer;
+    }
+}
+.heading-input{
+    height: 3rem;
+}
+.describe-input{
+    height: 15rem;
+    font:12px sans-serif;
+    resize: none;
+}
+@media only screen and (max-width: 768px) {
+    .create-post-container{
+        display: none;
+    }
+    .mobile{
+        background-color: $main-text-color;
+        position: absolute;
+        top: 10rem;
+        display: block !important;
+    }
+}

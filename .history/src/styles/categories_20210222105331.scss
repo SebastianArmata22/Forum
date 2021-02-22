@@ -1,0 +1,29 @@
+@import './variables.scss';
+.categories-container{
+    padding: 1rem 0 0 0;
+    height: calc(100% - 11rem);
+    overflow-y: auto;
+    button{
+        margin: 0 10% 0 10%;
+        background-color: transparent;
+        border: none;
+        height: 4rem;
+        width: 80%;
+        color: $main-text-color;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255,0.2);
+        cursor: pointer;
+        text-align: left;
+        &:hover{
+            border-bottom: 1px solid rgba(255, 255, 255,0.8);
+        }
+    }
+    }
+    .selected-category{
+        border-bottom: 2px solid $main-text-color !important;
+    }
+    @media only screen and (max-width: 768px) {
+        .categories-container{
+            display: flex;
+        }
+    }

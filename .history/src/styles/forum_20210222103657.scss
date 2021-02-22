@@ -1,0 +1,20 @@
+@import './variables.scss';
+.forum-container{
+    width: 100%;
+    height: 100vh;
+    @include flex-container;
+}
+.profile-category-container{
+    width: 15rem;
+    height: 100%;
+    background-color: $first-main-color;
+}
+@media only screen and (max-width: 768px) {
+    .forum-container{
+        display: block;
+        >div{
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+@import './variables.scss';
+.post{
+    width: calc((100% - 15rem)/2);
+    height: 100vh;
+    padding: 3rem;
+    color: $second-main-color;
+    overflow-y: auto;
+    h2{
+        color: $second-main-color;
+        font-size: 2.5rem;
+    }
+
+}
+.post-user-container{
+    @include flex-container;
+    justify-content: left;
+    margin: 2rem 0 2rem 0;
+    img{
+        height: 3rem;
+        margin-right: 1rem;
+    }
+    span{
+        color: $first-main-color;
+    }
+}
+
+.describe{
+    border-bottom: 1px solid rgba(94, 132, 140, 0.2);
+    padding-bottom: 1rem;
+}
+@media only screen and (max-width: 768px) {
+.mobile{
+    background-color: $main-text-color;
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+}
+}

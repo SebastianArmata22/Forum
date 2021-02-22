@@ -1,0 +1,29 @@
+@import './variables.scss';
+.profile-container{
+    height: 10rem;
+    @include flex-container;
+    flex-direction: column;
+    @include shadow-container;
+    input{
+        padding-bottom: 0.5rem;
+    }
+}
+.user-container{
+    @include flex-container;
+    flex-wrap: wrap;
+    height: 8rem;
+    img{
+        height: 3rem;
+        margin: 1rem 0.5rem 1rem 0;
+    }
+    p{
+        color: $main-text-color;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .profile-container{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 5rem;
+    }
+}
