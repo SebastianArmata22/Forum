@@ -1,7 +1,8 @@
 import '../styles/createPost.scss'
 import React, { useEffect, useState } from 'react'
-import firebase, {postsCollection} from '../firebase/firebase'
+import {postsCollection} from '../firebase/firebase'
 import {auth} from '../firebase/auth'
+import firebase from '../firebase/firebase'
 import categoryNames from '../data/categoryNames'
 
 
@@ -11,6 +12,9 @@ const CreatePost=({category, setIsCreatePost})=>{
     const [selectCategory, setSelectCategory]=useState(category.name)
     const [classes,setClasses]=useState('create-post-container mobile')
 
+    useEffect(()=>{
+        setClasses('create-post-container mobile')
+    },[])
     const changeHeading=(event)=>{
         setHeading(event.target.value)
     }
@@ -40,9 +44,6 @@ const CreatePost=({category, setIsCreatePost})=>{
         setClasses('create-post-container')
         setIsCreatePost(null)
     }
-    useEffect(()=>{
-        setClasses('create-post-container mobile')
-    },[])
     return(
         <div className={classes}>
             <button onClick={clickX} >x</button>
