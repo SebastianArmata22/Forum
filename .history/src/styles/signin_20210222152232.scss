@@ -9,7 +9,6 @@
     @include flex-container;
     > div{
         width: 60rem;
-        min-height: 70%;
         display: flex;
         -webkit-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
         -moz-box-shadow: 2px 0px 68px -13px rgba(0,0,0,1);
@@ -107,7 +106,7 @@
 @media only screen and (max-width: 600px) {
     .signin-container{
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
         > div{
             flex-direction: column;
             width: 100%;
